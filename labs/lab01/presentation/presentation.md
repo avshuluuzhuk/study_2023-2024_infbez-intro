@@ -1,7 +1,7 @@
 ---
 ## Front matter
 lang: ru-RU
-title: Лабораторная работа № 2
+title: Лабораторная работа № 1
 subtitle: Установка и конфигурация операционной системы на виртуальную машину
 author:
   - Шулуужук А. В.
@@ -43,7 +43,7 @@ header-includes:
 
 Указываем размер основной памяти виртуальной машины – 4096 МБ и число процессоров - 2
 
-![Установка размера памяти и числа процессоров](image/1.png){#fig:001 width=70%}
+![Установка размера памяти и числа процессоров](image/2.png){#fig:002 width=70%}
 
 ##
 
@@ -78,77 +78,67 @@ header-includes:
 
 ##
 
-![Установка пароля для пользователя с правами администратора](image/8.png){#fig:008 width=50%}
+Начинаем установку ОС. Перезагружаем виртуальную машину. Подключаем образ диска дополнений гостевой ОС
 
-##
-
-Начинаем установку ОС. Перезагружаем виртуальную машину
-
-![Завершение установки ОС](image/9.png){#fig:009 width=70%}
-
-##
-
-Подключаем образ диска дополнений гостевой ОС
-
-![Подключение образа диска дополнений гостевой ОС](image/10.png){#fig:010 width=70%}
+![Подключение образа диска дополнений гостевой ОС](image/8.png){#fig:008 width=70%}
 
 ## Домашнее задание
 
 В терминале выполняем команду dmesg и используем его для поиска
 dmegs | less
 
-![Выполнение команды dmegs | less](image/11.png){#fig:011 width=50%}
+![Выполнение команды dmegs | less](image/9.png){#fig:009 width=50%}
 
 ## 
 
-![Выполнение команды dmegs | less](image/12.png){#fig:012 width=70%}
+![Выполнение команды dmegs | less](image/10.png){#fig:010 width=70%}
 
 ##
 
 Узнаем версию ядра Linux. Команда dmesg | grep -i “linux
 version”
 
-![Команда dmesg | grep -i “linux version”](image/13.png){#fig:013 width=70%}
+![Команда dmesg | grep -i “linux version”](image/11.png){#fig:011 width=70%}
 
 ## 
 
 Частота процессора. Команда dmesg | grep -i “MHz
 
-![Команда dmesg | grep -i “MHz”](image/14.png){#fig:014 width=70%}
+![Команда dmesg | grep -i “MHz”](image/12.png){#fig:012 width=70%}
 
 ## 
 
 Модель процессора. Команда dmesg | grep -i “CPU0”
 
-![Команда dmesg | grep -i “CPU0”](image/15.png){#fig:015 width=70%}
+![Команда dmesg | grep -i “CPU0”](image/13.png){#fig:013 width=70%}
 
 ##
 
 Объем доступной оперативной памяти – 3,8 ГБ. Команда dmesg
 | grep -i “memory”
 
-![Команда dmesg | grep -i “memory”](image/16.png){#fig:016 width=70%}
+![Команда dmesg | grep -i “memory”](image/14.png){#fig:014 width=70%}
 
 ##
 
 Тип обнаруженного гипервизора - KVM. Команда dmesg | grep
 -i “hypervisor detected”
 
-![Команда dmesg | grep -i “hypervisor detected”](image/17.png){#fig:017 width=70%}
+![Команда dmesg | grep -i “hypervisor detected”](image/15.png){#fig:015 width=70%}
 
 ##
 
 Тип файловой системы корневого раздела – xfs. Используем
 команду df -Th
 
-![Команда df -Th](image/18.png){#fig:018 width=70%}
+![Команда df -Th](image/16.png){#fig:016 width=70%}
 
 ##
 
 Последовательность монтирования файловых систем
 Для этого используем команду dmesg | grep -i “mount”
 
-![Команда dmesg | grep -i “mount”](image/19.png){#fig:019 width=70%}
+![Команда dmesg | grep -i “mount”](image/17.png){#fig:017 width=70%}
 
 ## Выводы
 
